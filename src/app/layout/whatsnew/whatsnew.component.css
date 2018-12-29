@@ -232,4 +232,8 @@ input {
           .disable{
             pointer-events: none;
           }
+
+          .sub-category{
+              font-size: 14px !important;
+          }
     

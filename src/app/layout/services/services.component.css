@@ -1,0 +1,349 @@
+.container {
+    width: 100%;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.banner{
+    width: 100%;
+    text-align: center;
+    height:  279px;
+    background: #334194;
+    
+    
+}
+
+.body-heading{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  color: #334194;
+}
+
+
+
+.banner-heading{
+    padding-top: 40px;
+    font-size: 36px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #ffffff;
+}
+
+.banner-text{
+    
+    font-size: 16px;
+    font-family: 'Nunito Sans', sans-serif;
+    color: #ffffff;
+}
+
+/* Filter Services Bar */
+
+.filter-services{
+    height: 116px;
+    background-color: #e9eff5;
+    text-align: center;
+}
+
+.display-filter-services{
+    display: inline-block;
+    list-style-type: none;
+    margin: 0 auto;
+    
+}
+
+.filter-items{
+    display: inline-block;
+    
+    margin: 27px 80px 20px 0px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+.filter-text{
+  margin-top: 14px;
+    font-family: 'Nunito Sans', sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  text-align: center;
+  color: #52555a;
+}
+
+  /* New style */
+
+
+    .upper-tabs{   
+        padding-top: 30px;
+    }
+
+    .group-buttons{
+        height: 46px;
+        margin: 0 auto;
+        width: 474px;
+    }
+
+    .custom-digitalassets-button{
+        height: 46px;
+        float: left;
+        padding: 0px 30px;
+        background-color: #101f78;
+        color: white;
+        border:none;
+        border-left: 1px solid #334194;
+        border-radius: 40px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius:0px; 
+        cursor: pointer;
+
+    }
+    .custom-services-button{
+    height: 46px;
+    float: left;
+    padding: 0px 36px;
+    background-color: #101f78;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    cursor: pointer;
+    
+    }
+
+    /*button hover - services*/
+    form.group-buttons button.custom-services-button{
+        background: #3490ce;
+    }
+
+    form.group-buttons button.custom-services-button a{
+        color: white;
+        text-decoration: none;
+    }
+
+    /*PRODUCTS*/
+
+    form.group-buttons button.custom-products-button:hover{
+        background: #3490ce;
+    }
+
+    form.group-buttons button.custom-products-button a{
+        color: white;
+        text-decoration: none;
+    }
+
+    /*Digital Assets*/
+
+    form.group-buttons button.custom-digitalassets-button:hover{
+        background: #3490ce;
+    }
+
+    form.group-buttons button.custom-digitalassets-button a{
+        color: white;
+        text-decoration: none;
+    }
+
+    .custom-products-button{
+        height: 46px;
+        float: left;
+        padding: 0px 36px;
+        background-color: #101f78;
+        color: white;
+        border:none;
+        border-left: 1px solid #334194;
+        cursor: pointer;
+        
+    }
+
+   
+
+    li.link-tabs a.list-points.active.show, li.link-tabs a:hover
+    { 
+       color:#3490ce;
+       text-decoration: none;
+     }
+
+.body-area{
+    background: #f5f7fa;
+}
+/*cards*/
+
+
+
+.market-card{
+  display: inline-block;
+  width: 255px;
+  height: 158px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  text-align: center;
+  margin-right: 30px;
+}
+
+.add-new-text{
+  font-family:'Nunito Sans', sans-serif; 
+  font-size: 12px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: normal;
+  text-align: center;
+  color: #6c6c6c;
+  margin: 0px;
+}
+
+
+
+.button-add-new{
+  width: 70px;
+  height: 70px;
+  background-color: #f5f7fa;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: inline-block;
+  margin-bottom: 0px;
+}
+
+
+.text-center{
+    display: inline-block;
+    margin-left: 127px;
+    margin-top:28px;
+    font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: left; 
+  
+}
+
+.text-center a
+    { 
+       color:#414141;
+       text-decoration: none;
+       margin-right:15px;
+     }
+
+     .text-center a:hover{
+        color:#3490ce;
+     }
+
+    
+
+.services-card{
+    border: none;
+    display: inline-block;
+    margin-right: 33px;
+    background: #f5f7fa;
+}
+
+.product-header{
+  font-family: 'Nunito Sans', sans-serif; 
+  font-size: 16px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  margin-bottom: 4px;
+  letter-spacing: normal;
+  text-align: left;
+  color: #6c6c6c;
+}
+
+.user-info{
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 0.45;
+  color: #8e8e8e;
+  margin-bottom: 6px;
+}
+
+.price-info{
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 16px;  
+  font-weight: 900;
+  color: #414141;
+}
+
+.page-margin{
+    margin: 0px 126px;
+    padding-top: 50px;
+}
+
+.product-card{
+    border: none;
+    display: inline-block;
+    margin-right: 30px;
+    background: #f5f7fa;
+}
+
+.digital-assets-card{
+    border: none;
+    display: inline-block;
+    margin-right: 30px;
+    background: #f5f7fa;
+}
+
+/* Right Panel*/
+
+/* panel layout mechanics */
+.panel-wrap {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 800px;
+    transform: translateX(100%);
+    transition: .3s ease-out;
+  }
+  .panel {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background:white;
+    color: #414141;
+    overflow: auto;
+    padding: 1em;
+  }
+  
+  /* simulate panel state control --
+  this can also be triggered by a 
+  class name added to the body tag. 
+  Just using a checkbox sibling here
+  for simplicity
+  */ 
+  div.market-card button:click ~ .panel-wrap {
+    transform: translateX(0%);
+  }
+  
+  
+  /* demo display */
+  *,*:before, *:after {box-sizing: border-box;}
+  
+  
+  .button-add-new {
+    font-size: 1em;
+  }
+  
+  

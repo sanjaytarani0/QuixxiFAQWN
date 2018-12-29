@@ -7,6 +7,8 @@ import { FaqComponent } from './layout/faq/faq.component';
 import { WhatsnewComponent } from './layout/whatsnew/whatsnew.component';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { MarketplaceComponent } from './layout/marketplace/marketplace.component';
+import { ServicesComponent } from './layout/services/services.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { FooterComponent } from './layout/footer/footer.component';
     FaqComponent,
     WhatsnewComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    MarketplaceComponent,
+    ServicesComponent
   ],
   imports: [
     BrowserModule,
