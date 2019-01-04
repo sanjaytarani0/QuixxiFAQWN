@@ -9,6 +9,9 @@ import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { MarketplaceComponent } from './layout/marketplace/marketplace.component';
 import { ServicesComponent } from './layout/services/services.component';
+import { ServiceDetailsComponent } from './layout/service-details/service-details.component';
+import { ViewProfileComponent } from './layout/view-profile/view-profile.component';
+import { InviteUserComponent } from './layout/invite-user/invite-user.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { ServicesComponent } from './layout/services/services.component';
     HeaderComponent,
     FooterComponent,
     MarketplaceComponent,
-    ServicesComponent
+    ServicesComponent,
+    ServiceDetailsComponent,
+    ViewProfileComponent,
+    InviteUserComponent
   ],
   imports: [
     BrowserModule,

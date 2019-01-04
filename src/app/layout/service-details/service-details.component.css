@@ -1,0 +1,308 @@
+.iris {
+    background-image: url("../../../assets/adult-beard-emotion-157966.jpg");
+    background-repeat: no-repeat;
+    height: 500px;
+    background-size: cover;
+    position: relative;
+    background-position: center center;
+}
+.iris span{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background: rgba(0,0,0,0.4);
+    pointer-events: none;
+}
+
+.top-links{
+ list-style: none;
+ display: inline;
+ padding: 0px;
+ z-index: 2;
+ position: absolute;
+}
+
+li.breadcrumb-item a{
+    color: white;
+    text-decoration: none;
+}
+li.breadcrumb-item a:hover{
+    color: #eceff2; 
+}
+
+.service-name{
+  position: relative;
+  top:150px;  
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 36px;
+  font-weight: 800;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.badge-pill{
+  width: 76px;
+  height: 32px;
+  border-radius: 16px;
+  background-color: #c3cfe3;
+  margin-top: 10px;
+  padding-top: 8px;
+  margin-right: 10px;
+  background: white;
+  font-family: NunitoSans;
+  font-size: 14px;
+  font-weight: 300;
+  text-align: center;
+  color: #99a2b1;
+  border: 1px solid #99a2b1;
+}
+.tag-content{
+    padding-top: 20px;
+}
+.link-details{
+    font-weight: 600;
+    padding-top:10px;
+    padding-right:12px;
+    display: inline-block;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+
+}
+
+.breadcrumb{
+    
+    list-style: none;
+    display: inline;
+    padding: 0px;
+    z-index: 2;
+    position: absolute;
+    padding: none;
+    background: none;
+    list-style: none;
+    background-color:none;
+    border-radius: none !important;
+    color: white;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+    color:white;
+}
+.navigation ul li:after {
+    /* content: "  /  ";
+    color: white;    */
+}
+
+.share-button{
+    float: right;
+    z-index: 2;
+    position: relative;
+}
+
+.body-area{
+    background: #eceff2;
+    padding:30px 128px 30px 128px;
+}
+
+.carousel-box{
+    border: 20px solid white;
+    max-width: 730px;
+    max-height: 433px;
+   
+   
+}
+
+#thumbcarousel .item .thumb 
+    { 
+     border: 4px solid white;
+     display: inline-block; 
+     vertical-align: middle; 
+     cursor: pointer; 
+     margin-right: 12px;
+     border-left:0px;
+     border-right: 0px; 
+    }
+
+     .item{
+         background: white;
+         margin: 0px;
+         padding: 0px;
+     }
+
+     .thumb-img{
+        max-width: 128px;
+        max-height: 75px;
+     }
+     .carousel-box{
+        border: 20px solid white;
+        border-right: 40px solid white; 
+    }
+     #thumbcarousel .item .thumb:hover { border-color: #1089c0; }
+
+.carousel-img{
+    
+    width: 688px;
+    height: 304px;
+}
+
+.description-block{
+    background: white;
+    border: 15px solid white; 
+    margin-left: 15px;
+    box-sizing: border-box;
+}
+.profile-card-img{
+    border-radius: 50%;
+    position: relative;
+    bottom: 90px;
+    left: 90px;
+}
+
+.profile-box{
+    position: relative;
+    bottom: 280px;
+    width: 320px;
+    height: 370px;
+    background:  #334194;
+    color: white;
+}
+.profile-email{
+    display: block;
+    text-align: center;
+    position: relative;
+    bottom: 90px;
+}
+
+.card-header{
+        /* padding: .75rem 1.25rem; */
+        margin: 0px;
+        background-color: rgba(0,0,0,.03);
+        border-bottom: none;
+        padding: 0px;
+
+    }
+    
+    .service-price{
+        font-family: 'Nunito Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  position: relative;
+    bottom: 80px;
+    text-align: center;
+    display: block;
+    }
+.card-content{
+    text-align: center;
+}
+.buy-button{
+    background: #3490ce;
+    width: 290px;
+    height: 54px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    margin-bottom: 20px; 
+}
+.view-profile{
+    width: 290px;
+    height: 54px;
+    border-radius: 5px;
+    border: 1px solid white;
+    color: #ffffff;
+    cursor: pointer;
+    background:  #334194;
+    
+}
+.profile-link{
+    text-decoration: none;
+    color: white;
+}
+
+div.card-content button:hover{
+    border: 1px solid  #3490ce;
+}
+
+.item{
+    background: white;
+    width:688px;
+
+}
+.tag-area{
+    bottom: 380px;
+    background: white;
+    width: 400px !important;
+    height: 168px !important;
+    max-width: 400px;
+}
+.tag-header{
+    font-family: 'Nunito Sans', sans-serif; 
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 10px 10px 0px;
+  text-align: left;
+  color: #334194;
+  border-bottom: 1px solid #eaf2ff; 
+}
+@media screen and (max-width: 1000px) {
+    .carousel-box{
+    float: none;
+    width: auto;
+    height: 1000px;
+    }
+    .profile-box{
+        display: none;
+    }
+
+    .item{
+      display: none;
+    }
+
+    .body-area{
+        padding-bottom: 400px;
+    }
+
+    .right-panel{
+        padding-top: 100px; 
+    }
+  }
+
+.description-header{
+    font-family: 'Nunito Sans', sans-serif; 
+  font-size: 16px;
+  font-weight: 800;
+  padding: 10px 10px 10px 0px;
+  text-align: left;
+  color: #334194;
+  border-bottom: 1px solid #eaf2ff; 
+  margin-bottom: 10px;
+}
+
+.description-content{
+    font-family: 'Nunito Sans', sans-serif; 
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #8e8e8e;
+}

@@ -8,6 +8,7 @@ declare var $: any;
 })
 export class FaqComponent implements OnInit {
   
+  
 
   constructor() { }
 
