@@ -237,5 +237,7 @@ input {
               font-size: 14px !important;
           }
           
-    
+.active {
+    color: #3490ce;
+}
 

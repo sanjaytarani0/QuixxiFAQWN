@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./whatsnew.component.css']
 })
 export class WhatsnewComponent implements OnInit {
-
+ 
   constructor() { }
 
   ngOnInit() {
   }
+  
+  
 
 }

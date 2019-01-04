@@ -186,3 +186,7 @@ input {
        color:#3490ce;
        text-decoration: none;
      }
+
+     .active{
+         color: #3490ce;
+     }
