@@ -72,7 +72,6 @@
     flex-direction: row;
     width: 100%;
     padding: 30px 0px 10px 50px;
-     
     background: #eceff2;
 }
 
@@ -189,4 +188,74 @@ input {
 
      .active{
          color: #3490ce;
+     }
+
+
+     @media (max-width:1180px){
+         .container{
+             width: auto;
+         }
+
+         .banner{
+             width: auto;
+         }
+         .banner-heading{
+             width: auto;
+         }
+
+         .search{
+             width: auto;
+         }
+
+         .search-bar{
+             width: auto;
+         }
+
+         .input-search{
+             width: auto;
+         }
+
+         .tab-content{
+             margin: 0px;
+             width: auto;
+         }
+         .clearfix{
+             overflow: auto;
+         }
+         .body-area{
+             width: auto;
+             height: auto;
+             margin-bottom: 50px;
+         }
+
+         .tabs-left{
+             position: relative;
+             display: inline;
+         }
+         .leftPanel{
+             position: relative;
+             display: inline;
+         }
+
+         .rightPanel_resources{
+             width: auto;
+             margin: 0px;
+         }
+
+         .panel-answer{
+             width: auto;
+         }
+         .panel-question{
+             width: auto;
+         }
+         .tab-content{
+             width: auto;
+             margin: 0px;
+
+         }
+         .tab-pane{
+             width: auto;
+             margin: 0px;
+         }
+
      }

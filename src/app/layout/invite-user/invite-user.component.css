@@ -1,0 +1,101 @@
+.body-area{
+    background: #f5f7fa;
+}
+
+.invite-section{
+    margin: 0px 318px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.header{
+    align-items: center;
+    padding-bottom: 61px;
+    background: white;
+    padding-top: 60px;
+}
+.header-img{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}   
+.main-text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    color: #ffc10e;
+}
+
+.body-text{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    text-align: center;
+    color: #848484;
+    margin: 0px 124px 0px 124px
+}
+
+.user-email{
+    text-decoration: underline;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 18px;
+    color:  #3490ce;
+}
+
+.invite-button{
+    border-radius: 5px;
+    border: none;
+    background-color: #3490ce;
+    width: 508px;
+    height: 54px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 2.19;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    margin: auto;
+    margin-top: 47px;
+
+}
+
+@media (max-width: 1180px){
+    .container{
+        width: auto;
+    }
+
+    .invite-button{
+        width: auto;
+        height: auto;
+    }
+
+    .body-area{
+        margin: 0px;
+        width: auto;
+
+    }
+    .body-text{
+        width: auto;
+        font-size: auto;
+        margin: 0px;
+    }
+
+    .main-text{
+        width: auto;
+    }
+
+    .header{
+        margin: 0px;
+        width: auto;
+    }
+    .invite-section{
+        width: auto;
+        margin: 0px;
+    }
+}
+

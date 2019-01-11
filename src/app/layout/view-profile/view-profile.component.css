@@ -47,6 +47,7 @@
     letter-spacing: normal;
     text-align: left;
     color: white;
+    text-decoration: none;
 
 }
 
@@ -79,8 +80,10 @@
 }
 
 .container-flex{
-    padding: 0px 128px 0px 128px; 
+    padding: 0px 0px 0px 180px; 
     background: #eceff2;
+    position: relative;
+    bottom: 20px;
 }
 
 .offser-16{
@@ -199,6 +202,88 @@
         color: #8e8e8e;
     }
 
+    .services-card{
+        border: none;
+        display: inline-block;
+        margin-right: 33px;
+        background: #eceff2;
+    }
+
+    .body-heading{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.33;
+        letter-spacing: normal;
+        text-align: left;
+        color: #334194;
+      }
+
+      .user-info{
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 13px;
+        font-weight: normal;
+        line-height: 0.45;
+        color: #8e8e8e;
+        margin-bottom: 6px;
+      }
+
+      .product-header{
+        font-family: 'Nunito Sans', sans-serif; 
+        font-size: 16px;
+        font-weight: 600;
+        font-style: normal;
+        font-stretch: normal;
+        margin-bottom: 4px;
+        letter-spacing: normal;
+        text-align: left;
+        color: #6c6c6c;
+      }
+
+      .price-info{
+        font-family: 'Nunito Sans', sans-serif; 
+        font-size: 16px;  
+      font-weight: 900;
+      color: #414141;
+    }
+    .market-services-section{
+        margin-left: 20px;
+    }
+    .page-margin{
+        margin-bottom: 80px;
+    }
+
+    .description-header{
+        font-family: 'Nunito Sans', sans-serif; 
+        font-size: 16px;
+        padding: 30px 39px 0px 30px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #8e8e8e;
+    }
+
+    .description-content{
+        font-family: 'Nunito Sans', sans-serif; 
+        font-size: 16px;
+        padding: 30px 39px 0px 30px;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #8e8e8e;
+        overflow: auto;
+        height: 361px;
+    }
+
+/*Media Queries*/
+
     @media screen and (max-width:600px){
         .container-flex{
             padding: 0px;
@@ -214,3 +299,11 @@
             height: 350px;
         }
     }
+
+@media screen and (width:446px){
+    div.text-area{
+        margin-top:20px;
+        
+    }
+}
+

@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./invite-user.component.css']
 })
 export class InviteUserComponent implements OnInit {
-
-  constructor() { }
+user: string;
+  constructor() { 
+    this.user = "sanjay@gmail.com"
+  }
 
   ngOnInit() {
   }
