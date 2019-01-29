@@ -1,3 +1,4 @@
+
 .container {
     width: 100%;
     max-width: 100%;
@@ -72,7 +73,7 @@
     flex-direction: row;
     width: 100%;
     padding: 30px 0px 10px 50px;
-     
+    margin-bottom: 80px;
     background: #eceff2;
 }
 
@@ -163,6 +164,7 @@
     color: #334194;
     font-family: 'Nunito Sans', sans-serif;
     background-color: #e0ecff;
+    margin: 20px 0px 0px 20px;
 }
 .badge {
     display: inline-block;
@@ -199,7 +201,10 @@ input {
   /* New style */
 
   .sideways{
-      display: block;  
+      display: block; 
+      width:75%;
+      margin-top:10px;
+      padding-bottom:15px; 
     }
 
     .content-heading{
@@ -212,10 +217,12 @@ input {
         letter-spacing: normal;
         text-align: left;
         color: #334194;
+        padding-top:15px;
+        margin-left:20px;
     }
 
     .tab-pane{
-        margin-right: 70px;
+       
     }
 
      li.link-tabs a.list-points.active.show, li.link-tabs a:hover
@@ -241,3 +248,159 @@ input {
     color: #3490ce;
 }
 
+.link-tabs{
+    margin-left:20px;
+}
+
+.nav-tabs{
+    border:none;
+}
+
+.link-tabs a.active::after{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f0da";
+    font-weight:900;
+    float: right;
+    padding-right: 10px;
+    padding-top:3px;
+    color: #334194;
+}
+
+.toggle-bar{
+    display: none;
+}
+
+.module-list-header{
+    text-align: left;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 16px;
+    font-weight: 800;
+    color: #334194;
+
+}
+
+.module-list-data{
+    text-align: left;
+    list-style-type: none;
+    
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 16px;
+    font-weight: 800;
+    color: #8e8e8e;
+
+}
+
+.sub-list-header{
+    text-align: left;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif; 
+}
+
+.sub-list-data{
+    text-align: left;
+    list-style-type: none;
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 14px;
+    font-weight: 800;
+    color: #8e8e8e;
+
+}
+
+
+/* Media queries */
+@media (max-width:1180px){
+    .container{
+        width: auto;
+    }
+
+    .banner{
+        width: auto;
+    }
+    .banner-heading{
+        width: auto;
+    }
+    .menu-button{
+        background-color: #eceff2 !important;
+        border: 1px solid lightgray;
+        margin:5px 0px 0px 5px;
+        display: inline-block;
+        
+    }
+    .search{
+        width: auto;
+        margin: 0px 10px 0px 20px
+    }
+
+    .panel-title{
+        margin: 0px;
+    }
+
+    .prefix{
+        padding-top:3px;
+        color: #130303;
+    }
+
+   
+    .toggle-bar{
+        display: block;
+    }
+    .search-bar{
+        width: auto;
+    }
+
+    .input-search{
+        width: auto;
+    }
+
+    .tab-content{
+        margin: 0px;
+        width: auto;
+       
+    }
+    .clearfix{
+        overflow: auto;
+    }
+    .body-area{
+        width: auto;
+        height: auto;
+        padding:0px;
+        
+    }
+    .banner-text{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .tabs-left{
+        position: relative;
+        display: inline;
+    }
+    .leftPanel{
+        position: relative;
+        display: inline;
+    }
+
+    .rightPanel_resources{
+        width: auto;
+        margin: 0px;
+        padding-right: 0px;
+    }
+    .tab-content{
+        width: auto;
+        margin: 0px;
+
+    }
+
+    .tab-pane{
+        width: auto;
+        margin: 0px;
+    }
+
+    .leftPanel{
+        display: none;
+    }
+    .col-md-3{
+        padding-right: 0px !important;
+    }
+}

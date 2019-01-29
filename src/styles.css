@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background:  #eceff2 !important;
+    min-height: 100%;
+    overflow: auto;
+}
+
+html{
+    height: 100%;
+}

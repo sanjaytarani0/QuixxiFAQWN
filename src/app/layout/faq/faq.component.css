@@ -73,6 +73,9 @@
     width: 100%;
     padding: 30px 0px 10px 50px;
     background: #eceff2;
+    height: auto;
+    overflow: auto;
+    margin-bottom: 80px;
 }
 
 
@@ -84,16 +87,8 @@
     line-height: 2.5;
 }
 
-.list-header{
-  font-family: 'Nunito Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 800;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1.33;
-  letter-spacing: normal;
-  text-align: left;
-  color: #334194;
+.toggle-bar{
+    display: none;
 }
 
 .list-points{
@@ -112,32 +107,9 @@
     flex:75%;
     padding-right: 70px; 
     text-align: left;
+    overflow: auto;
 }
 
-
-.panel-question{
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 18px;
-    font-weight: 800;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 2.3;
-    letter-spacing: normal;
-    text-align: left;
-    color: #334194;
-}
-
-.panel-answer{
-    font-family:'Nunito Sans', sans-serif; 
-    font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  text-align: left;
-  color: #8e8e8e;
-}
 
 input {
     border: 0;
@@ -158,10 +130,16 @@ input {
   }
 
 
+
   /* New style */
 
   .sideways{
-      display: block;  
+      display: block; 
+      border-radius: 5px; 
+    }
+
+    .link-tabs{
+        padding: 5px 10px 5px 15px;
     }
 
     .content-heading{
@@ -174,6 +152,17 @@ input {
         letter-spacing: normal;
         text-align: left;
         color: #334194;
+        padding: 15px 15px 10px 15px;
+    }
+
+    .tab-content{
+        height: auto;
+    }
+    .nav-tabs{
+        border: none;
+        background: #ffffff !important;
+        width:75%;
+        margin: 10px 10px 10px 15px;
     }
 
     .tab-pane{
@@ -191,71 +180,171 @@ input {
      }
 
 
-     @media (max-width:1180px){
-         .container{
-             width: auto;
-         }
+   
 
-         .banner{
-             width: auto;
-         }
-         .banner-heading{
-             width: auto;
-         }
+     .panel-heading .accordion-toggle::after {
+        /* symbol for "opening" panels */
+        font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+        content: "-";    /* adjust as needed, taken from bootstrap.css */
+        float: right;        /* adjust as needed */
+        color: grey;  
+        font-size:26px;       /* adjust as needed */
+    }
 
-         .search{
-             width: auto;
-         }
 
-         .search-bar{
-             width: auto;
-         }
+    
+    .panel-heading .accordion-toggle.collapsed:after {
+        /* symbol for "collapsed" panels */
+        content: "+";    /* adjust as needed, taken from bootstrap.css */
+    }
 
-         .input-search{
-             width: auto;
-         }
 
-         .tab-content{
-             margin: 0px;
-             width: auto;
-         }
-         .clearfix{
-             overflow: auto;
-         }
-         .body-area{
-             width: auto;
-             height: auto;
-             margin-bottom: 50px;
-         }
+    .accordion-toggle{
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    text-align: left;
+    color: #334194;
+    text-decoration: none;
+    }
 
-         .tabs-left{
-             position: relative;
-             display: inline;
-         }
-         .leftPanel{
-             position: relative;
-             display: inline;
-         }
+    .panel-body{
+  font-family: 'Nunito Sans', sans-serif; 
+  font-size: 14px;
+  text-align: left;
+  color: #130303;
+    }
 
-         .rightPanel_resources{
-             width: auto;
-             margin: 0px;
-         }
+  .left-panel li{
+      line-height: 2.0;
+  }
 
-         .panel-answer{
-             width: auto;
-         }
-         .panel-question{
-             width: auto;
-         }
-         .tab-content{
-             width: auto;
-             margin: 0px;
+  .panel-default{
+      margin-bottom: 10px;
+  }
 
-         }
-         .tab-pane{
-             width: auto;
-             margin: 0px;
-         }
 
-     }
+  .text-center{
+    display: inline-block;
+    margin-left: 127px;
+    margin-top:28px;
+    font-family: 'Nunito Sans', sans-serif;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: left; 
+  }
+
+  .link-tabs a.active::after{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f0da";
+    font-weight:900;
+    float: right;
+    padding-right: 10px;
+    color: #334194;
+}
+
+/* Media Queries */
+
+@media (max-width:1180px){
+    .container{
+        width: auto;
+    }
+
+    .banner{
+        width: auto;
+    }
+    .banner-heading{
+        width: auto;
+    }
+    .menu-button{
+        background-color: #eceff2 !important;
+        border: 1px solid lightgray;
+        margin:5px 0px 0px 5px;
+        display: inline-block;
+        
+    }
+    .search{
+        width: auto;
+        margin: 0px 10px 0px 20px
+    }
+
+    .panel-title{
+        margin: 0px;
+    }
+
+    .prefix{
+        padding-top:3px;
+        color: #130303;
+    }
+
+   
+    .toggle-bar{
+        display: block;
+    }
+    .search-bar{
+        width: auto;
+    }
+
+    .input-search{
+        width: auto;
+    }
+
+    .tab-content{
+        margin: 0px;
+        width: auto;
+       
+    }
+    .clearfix{
+        overflow: auto;
+    }
+    .body-area{
+        width: auto;
+        height: auto;
+        padding:0px;
+        
+    }
+    .banner-text{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .tabs-left{
+        position: relative;
+        display: inline;
+    }
+    .leftPanel{
+        position: relative;
+        display: inline;
+    }
+
+    .rightPanel_resources{
+        width: auto;
+        margin: 0px;
+        padding-right: 0px;
+    }
+    .tab-content{
+        width: auto;
+        margin: 0px;
+
+    }
+
+    .tab-pane{
+        width: auto;
+        margin: 0px;
+    }
+
+    .leftPanel{
+        display: none;
+    }
+    .col-md-3{
+        padding-right: 0px !important;
+    }
+}

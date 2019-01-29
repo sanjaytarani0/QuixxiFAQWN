@@ -13,10 +13,11 @@ export class FaqComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-   
+    
     $(".tab_content").hide();
     $(".tab_content:first").show();
-        
+     
+   
   }
 
  

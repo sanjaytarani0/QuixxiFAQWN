@@ -2,6 +2,6 @@
 @import './vars';
 
 html{ height:100%; }
-body{ min-height:100%; padding:0; margin:0; position:relative; background: #F6F7FB;}
+body{ min-height:100%; padding:0; margin:0; position:relative;}
 
-body::after{ content:''; display:block; height:50px; }
+body::after{ content:''; display:block;  }
