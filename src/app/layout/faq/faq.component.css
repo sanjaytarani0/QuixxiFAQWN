@@ -1,3 +1,4 @@
+/* Main Container */
 .container {
     width: 100%;
     max-width: 100%;
@@ -5,13 +6,13 @@
     padding: 0px;
 }
 
+/* Banner section */
+
 .banner{
     width: 100%;
     text-align: center;
-    height:  239px;
-    background: #334194;
-    
-    
+    height:  auto;
+    background: #334194;  
 }
 
 .banner-heading{
@@ -20,15 +21,19 @@
     font-family: 'Nunito Sans', sans-serif;
     color: #ffffff;
 }
-.search{
-    padding-top: 15px;
-    
-}
+
 .banner-text{
     
     font-size: 16px;
     font-family: 'Nunito Sans', sans-serif;
     color: #ffffff;
+    
+}
+
+/* Search Bar */
+
+.search{
+    padding-top: 15px;   
 }
 
 .search-bar{
@@ -65,6 +70,34 @@
     line-height: 60px;
     padding-right: 30px; 
 }
+
+/* Telegram Chat */
+
+.group-chat{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom:0px;
+    
+}
+
+.telegram-support{
+    display: inline-block;
+    padding-top: 12px;
+    margin-bottom: 40px;
+}
+
+.telegram-link{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.group-chat a.telegram-link:hover{
+    text-decoration: underline;
+}
+
+
 /*body-area*/
 
 .body-area{
@@ -78,7 +111,7 @@
     margin-bottom: 80px;
 }
 
-
+/* Left Panel Body Area*/
 .leftPanel{
     flex: 25%;
     padding-left: 70px; 
@@ -91,9 +124,14 @@
     display: none;
 }
 
+.link-tabs{
+    padding: 0px 10px 5px 15px;
+}
+
+
 .list-points{
   font-family: 'Nunito Sans', sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -102,6 +140,59 @@
   text-align: left;
   color: #334194;
 }
+
+.sideways{
+    display: block; 
+    border-radius: 5px; 
+  }
+
+  .content-heading{
+    font-family: 'Nunito Sans', sans-serif; 
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.33;
+    text-align: left;
+    color: #334194;
+    padding: 15px 15px 10px 15px;
+}
+
+.nav-tabs{
+    border: none;
+    background: #ffffff !important;
+    width:75%;
+    margin: 10px 10px 10px 15px;
+}
+
+li.link-tabs a.list-points.active.show, li.link-tabs a:hover
+    { 
+       color:#3490ce;
+       text-decoration: none;
+     }
+
+     .active{
+         color: #3490ce;
+     }
+
+     
+  .left-panel li{
+    line-height: 2.0;
+}
+
+.link-tabs a.active::after{
+    font-family: 'Font Awesome\ 5 Free';
+    content: "\f0da";
+    font-weight:900;
+    float: right;
+    padding-right: 10px;
+    color: #334194;
+    padding-top: 4px;
+}
+
+.sm-screen-section{
+    display: none;
+}
+
+/* Right Panel Body Area*/
 .rightPanel_resources{
     padding-top: 10px;
     flex:75%;
@@ -110,6 +201,9 @@
     overflow: auto;
 }
 
+.panel-title{
+    line-height: 0.75;
+}
 
 input {
     border: 0;
@@ -129,126 +223,55 @@ input {
     padding: 10px;
   }
 
+  .tab-content{
+    height: auto;
+}
+.tab-pane{
+    margin-right: 70px;
+}
+
+.panel-heading .accordion-toggle::after {
+    /* symbol for "opening" panels */
+    font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
+    content: "-";    /* adjust as needed, taken from bootstrap.css */
+    float: right;        /* adjust as needed */
+    color: grey;  
+    font-size:26px;       /* adjust as needed */
+    padding-top: 3px;
+
+}
 
 
-  /* New style */
 
-  .sideways{
-      display: block; 
-      border-radius: 5px; 
-    }
-
-    .link-tabs{
-        padding: 5px 10px 5px 15px;
-    }
-
-    .content-heading{
-        font-family: 'Nunito Sans', sans-serif; 
-        font-size: 18px;
-        font-weight: 800;
-        font-style: normal;
-        font-stretch: normal;
-        line-height: 1.33;
-        letter-spacing: normal;
-        text-align: left;
-        color: #334194;
-        padding: 15px 15px 10px 15px;
-    }
-
-    .tab-content{
-        height: auto;
-    }
-    .nav-tabs{
-        border: none;
-        background: #ffffff !important;
-        width:75%;
-        margin: 10px 10px 10px 15px;
-    }
-
-    .tab-pane{
-        margin-right: 70px;
-    }
-
-    li.link-tabs a.list-points.active.show, li.link-tabs a:hover
-    { 
-       color:#3490ce;
-       text-decoration: none;
-     }
-
-     .active{
-         color: #3490ce;
-     }
+.panel-heading .accordion-toggle.collapsed:after {
+    /* symbol for "collapsed" panels */
+    content: "+";    /* adjust as needed, taken from bootstrap.css */
+    padding-top: 3px;
+}
 
 
-   
+.accordion-toggle{
+font-family: 'Nunito Sans', sans-serif; 
+font-size: 18px;
+font-weight: 800;
+font-style: normal;
+font-stretch: normal;
+line-height: 0.75;
+letter-spacing: normal;
+text-align: left;
+color: #334194;
+text-decoration: none;
+}
 
-     .panel-heading .accordion-toggle::after {
-        /* symbol for "opening" panels */
-        font-family: 'Glyphicons Halflings';  /* essential for enabling glyphicon */
-        content: "-";    /* adjust as needed, taken from bootstrap.css */
-        float: right;        /* adjust as needed */
-        color: grey;  
-        font-size:26px;       /* adjust as needed */
-    }
+.panel-body{
+font-family: 'Nunito Sans', sans-serif; 
+font-size: 14px;
+text-align: left;
+color: #130303;
+}
 
-
-    
-    .panel-heading .accordion-toggle.collapsed:after {
-        /* symbol for "collapsed" panels */
-        content: "+";    /* adjust as needed, taken from bootstrap.css */
-    }
-
-
-    .accordion-toggle{
-    font-family: 'Nunito Sans', sans-serif; 
-    font-size: 18px;
-    font-weight: 800;
-    font-style: normal;
-    font-stretch: normal;
-    line-height: 1.33;
-    letter-spacing: normal;
-    text-align: left;
-    color: #334194;
-    text-decoration: none;
-    }
-
-    .panel-body{
-  font-family: 'Nunito Sans', sans-serif; 
-  font-size: 14px;
-  text-align: left;
-  color: #130303;
-    }
-
-  .left-panel li{
-      line-height: 2.0;
-  }
-
-  .panel-default{
-      margin-bottom: 10px;
-  }
-
-
-  .text-center{
-    display: inline-block;
-    margin-left: 127px;
-    margin-top:28px;
-    font-family: 'Nunito Sans', sans-serif;
-  font-size: 12px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: 0.2px;
-  text-align: left; 
-  }
-
-  .link-tabs a.active::after{
-    font-family: 'Font Awesome\ 5 Free';
-    content: "\f0da";
-    font-weight:900;
-    float: right;
-    padding-right: 10px;
-    color: #334194;
+.panel-default{
+    margin-bottom: 10px;
 }
 
 /* Media Queries */
@@ -278,6 +301,7 @@ input {
 
     .panel-title{
         margin: 0px;
+        
     }
 
     .prefix{
@@ -316,10 +340,16 @@ input {
         text-align: center;
     }
 
-    .tabs-left{
-        position: relative;
-        display: inline;
+    .sm-screen-section{
+        display: inline; 
+         
     }
+
+    .panel-body{
+        padding-top: 7px;
+    }
+
+
     .leftPanel{
         position: relative;
         display: inline;
@@ -347,4 +377,37 @@ input {
     .col-md-3{
         padding-right: 0px !important;
     }
+
+    .link-tabs{
+        display: inline-block;
+        background: #eceff2;
+        padding-bottom: 0px;
+    }
+
+    li.link-tabs a.list-points.active::after{
+        display: none;
+    }
+
+    .telegram-link{
+        text-decoration: underline;
+    }
 }
+
+@media only screen and (min-width : 843px) and (max-width: 1298px) {
+    /* styles for browsers between 843 and 1298px; */
+    .col-md-8{
+        flex:1;
+        max-width: 100%;
+
+    }
+
+}
+
+@media only screen and (min-width : 845px) and (max-width: 927px){
+    .col-md-8{
+        flex:1;
+        max-width: 100%;
+    }
+}
+
+

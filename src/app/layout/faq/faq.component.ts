@@ -16,6 +16,7 @@ export class FaqComponent implements OnInit {
     
     $(".tab_content").hide();
     $(".tab_content:first").show();
+    $('#tooltip').tooltip({trigger: "hover"});
      
    
   }
