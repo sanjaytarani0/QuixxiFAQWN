@@ -11,8 +11,6 @@
     text-align: center;
     height:  239px;
     background: #334194;
-    
-    
 }
 
 .banner-heading{
@@ -77,6 +75,9 @@
     background: #eceff2;
 }
 
+.panel-body{
+    display: none;
+}
 
 .leftPanel{
     flex: 25%;
@@ -202,7 +203,7 @@ input {
 
   .sideways{
       display: block; 
-      width:75%;
+      width:100%;
       margin-top:10px;
       padding-bottom:15px; 
     }
@@ -336,12 +337,45 @@ input {
         margin: 0px;
     }
 
+    .clearfix{
+        clear: both;
+    }
     .prefix{
         padding-top:3px;
         color: #130303;
     }
 
-   
+    .panel-body{
+        display: block;
+        overflow-x: scroll;
+        position: relative;
+        width: 100%;
+        text-align: center;
+        width: auto;
+        box-sizing: content-box;
+    }
+
+    .sideways{
+        -webkit-box-align: center;
+        background: #eceff2;
+        display: inline;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        list-style: none;
+    }
+    
+    .link-tabs{
+        display: inline;
+        text-align: -webkit-match-parent;
+        float: left;
+        
+    }
+    .link-tabs a.active::after{
+        display: none;
+    }
+
     .toggle-bar{
         display: block;
     }
@@ -403,4 +437,36 @@ input {
     .col-md-3{
         padding-right: 0px !important;
     }
+    
+}
+
+
+.col-md-3{
+    max-width: 30%;
+    padding-right: 20px;
+}
+
+@media (max-width: 479px){
+.panel-body {
+    overflow-x: scroll;
+    
+}
+}
+
+@media (min-width: 768px){
+.col-md-8{
+    flex: 1 !important;
+    max-width: 100% !important;
+    }
+}
+
+.telegram-link{
+    color: #8e8e8e;;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a.telegram-link:hover{
+    color: #334194;
+    text-decoration: underline;
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, NgModule } from '@angular/core';
 
 declare var $: any;
 @Component({
@@ -6,6 +6,8 @@ declare var $: any;
   templateUrl: './faq.component.html',
   styleUrls: ['./faq.component.css']
 })
+
+
 export class FaqComponent implements OnInit {
   
   
@@ -13,11 +15,6 @@ export class FaqComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    
-    $(".tab_content").hide();
-    $(".tab_content:first").show();
-    $('#tooltip').tooltip({trigger: "hover"});
-     
    
   }
 
