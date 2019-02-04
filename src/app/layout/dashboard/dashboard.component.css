@@ -1,0 +1,29 @@
+.text-center{
+    display: inline-block;
+    margin-left: 127px;
+    margin-top:28px;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.2px;
+    text-align: left; 
+  
+}
+
+.text-center a
+    { 
+       color:#414141;
+       text-decoration: none;
+       margin-right:15px;
+     }
+
+     .text-center a:hover{
+        color:#3490ce;
+     }
+     
+     .spacing{
+         margin-bottom: 180px;
+     }
